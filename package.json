@@ -1,0 +1,9 @@
+{
+  "name": "contactapi_graphql",
+  "version": "1.0.0",
+  "description": "I built a contact API using GraphQL",
+  "main": "index.js",
+  "author": "Johnbosco",
+  "license": "MIT",
+  "private": true
+}
