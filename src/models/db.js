@@ -42,6 +42,7 @@ const contacts = [
 const schema = buildSchema(`
   type Query {
     getContacts: [ Contact ]
+    getContact(id: Int!): Contact
   }
 
   type Contact {

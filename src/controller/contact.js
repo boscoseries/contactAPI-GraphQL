@@ -6,9 +6,14 @@ const getAll = () => {
     return allContacts
   };
 }
+const getOne = (args) => {
+ return  contacts.find(contact => contact.id === args.id && contact.status === "available");
+};
+
 
 const root = {
   getContacts: getAll,
+  getContact: getOne
 };
 
 module.exports = root;
