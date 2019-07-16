@@ -23,22 +23,32 @@ const contacts = [
     website: "www.bobmarley.com",
     email: "marley@gmail.com",
     status: "blocked"
+  },
+  {
+    id: 3,
+    firstname: "Jerry",
+    surname: "Peters",
+    mobile: "08038904478",
+    phone: "07039567895",
+    address: "6 peters way, FL",
+    website: "www.jerrypeters.com",
+    email: "jpeters@gmail.com",
+    status: "available"
   }
 ];
 
 
 // GraphQl schema
 const schema = buildSchema(`
-  type query {
-    getContacts(): Contacts
-    getContact(id: Int!): Contact
+  type Query {
+    getContacts: [ Contact ]
   }
 
   type Contact {
     id: Int
-    firstname: String!
+    firstname: String
     surname: String
-    mobile: String!
+    mobile: String
     phone: String
     address: String
     website: String
@@ -49,7 +59,6 @@ const schema = buildSchema(`
 
 
 
-
-
-
 module.exports = { schema, contacts }
+
+
