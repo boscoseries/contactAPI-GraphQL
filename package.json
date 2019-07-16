@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "I built a contact API using GraphQL",
   "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
   "author": "Johnbosco",
   "license": "MIT",
   "private": true,
